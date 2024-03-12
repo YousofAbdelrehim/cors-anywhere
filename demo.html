@@ -60,7 +60,7 @@ textarea {
   </label>
 </div>
 <div id="bottom">
-  <textarea id="output"></textarea>
+  <div id="output"></div>
 </div>
 
 <script>
@@ -94,7 +94,7 @@ textarea {
         url: urlField.value,
         data: dataField.value
       }, function printResult(result) {
-        outputField.value = result;
+        outputField.innerHTML = result;
       });
     };
   })();
